@@ -10,11 +10,11 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *p2
-	listint_t *prev
+	listint_t *p2;
+	listint_t *prev;
 
-	x = list;
-	y = list;
+	p2 = list;
+	prev = list;
 	while (list && p2 && p2->next)
 	{
 		list = list->next;
@@ -27,7 +27,7 @@ int check_cycle(listint_t *list)
 			while (1)
 			{
 				p2 = prev;
-				while (p2->next != list && x->next != prev)
+				while (p2->next != list && p2->next != prev)
 				{
 					p2 = p2->next;
 				}
