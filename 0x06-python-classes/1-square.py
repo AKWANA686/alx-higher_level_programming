@@ -3,12 +3,8 @@
 
 
 class Square:
-    """Class Square that defines a square object
-    """
-    def__init__(self, size):
-        """Initialize method that stores the size of the square
+    """Representation of a square"""
 
-        Args:
-            param1 (int): size of the square
-        """
+    def__init__(self, size):
+        """Instantiation with size"""
         self.__size = size
