@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Square related feature module"""
+"""Square with size"""
 
 
 class Square:
