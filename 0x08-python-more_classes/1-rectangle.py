@@ -1,22 +1,17 @@
 #!/usr/bin/python3
-"""Rectangle with size"""
+"""1 - Real definition of a rectangle"""
 
 
-class Rectangle:
-    """Representation of a rectangle"""
+class Rectangle():
+    """Representation of a Rectangle"""
 
     def __init__(self, width=0, height=0):
-        """Instantiation with size"""
+        """Instantiation with width and height"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Property to retrieve width"""
-        return self.__width
-
-    @width.setter
-    def width(self, value):
         """Property to retrieve width"""
         return self.__width
 

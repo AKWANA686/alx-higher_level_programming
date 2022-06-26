@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Rectangle related feature module"""
+"""0 - Simple rectangle"""
 
 
 class Rectangle:
-    """a class Square that defines a rectangle"""
+    """empty class Rectangle"""
     pass
