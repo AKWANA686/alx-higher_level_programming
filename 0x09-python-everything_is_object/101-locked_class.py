@@ -1,14 +1,7 @@
 #!/usr/bin/python3
-"""
-This is a module that containts a clas that avoids
-dynmaically created attributes
-
-"""
+"""Low memory cost"""
 
 
 class LockedClass:
-    __slots__ = ['first_name']
-
-    def __init__(self):
-        """ Init method """
-        pass
+    """Low memory cost"""
+    __slots__ = ["first_name"]
