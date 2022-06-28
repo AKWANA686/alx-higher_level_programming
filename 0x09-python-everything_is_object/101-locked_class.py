@@ -2,6 +2,7 @@
 """
 This is a module that containts a clas that avoids
 dynmaically created attributes
+
 """
 
 
