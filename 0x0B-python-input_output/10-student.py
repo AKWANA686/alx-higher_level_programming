@@ -1,23 +1,18 @@
 #!/usr/bin/python3
-"""Student to JSON with filter"""
+""" creating student class """
 
 
 class Student:
-    """representation of a student"""
+    """ Defining a class"""
     def __init__(self, first_name, last_name, age):
-        """instantiation of the student"""
+        """ Initializing a class"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        """retrieves a dictionary representation of a Student instance
-        with filter"""
-        if (type(attrs) == list and
-                all(type(element) == str for element in attrs)):
-            new_dict = {}
-            for element in attrs:
-                if element in self.__dict__:
-                    new_dict[element] = self.__dict__[element]
-                return (new_dict)
+        """ retrieves a dictionary representation """
+        if (type(attrs)) == list and all(type(i) == str for i in attrs):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+        else:
             return (self.__dict__)
